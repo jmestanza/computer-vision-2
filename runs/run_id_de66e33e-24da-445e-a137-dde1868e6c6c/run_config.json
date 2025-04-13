@@ -1,0 +1,25 @@
+{
+    "project": "detectron2_training",
+    "name": "faster_rcnn_experiment_de66e33e-24da-445e-a137-dde1868e6c6c",
+    "config": {
+        "model": "Faster R-CNN",
+        "learning_rate": 0.00025,
+        "batch_size": 2,
+        "test_eval_period": 2000,
+        "max_iterations": 20000,
+        "num_classes": 2,
+        "model_weights": "detectron2://COCO-Detection/faster_rcnn_R_101_FPN_3x/137851257/model_final_f6e8b1.pkl",
+        "num_workers": 2,
+        "ims_per_batch": 2,
+        "device": "cuda",
+        "confidence": 0.5,
+        "model_roi_heads_batch_size_per_image": 512,
+        "amp_enabled": true,
+        "min_size_train": [
+            640
+        ],
+        "max_size_train": 640,
+        "min_size_test": 640,
+        "max_size_test": 640
+    }
+}
